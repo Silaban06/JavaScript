@@ -1,0 +1,150 @@
+/* Tag <script>
+Dalam HTML, kode JavaScript disisipkan di antara tag <script> dan </script>.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript in Body</h2>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "My First JavaScript";
+</script>
+
+</body>
+</html>
+
+========================================================================================================================================================================================================
+/* JavaScript in <head>
+Pada contoh ini, fungsi JavaScript ditempatkan di bagian <head> pada halaman HTML. Fungsi ini dipanggil (dipanggil) ketika sebuah tombol diklik.
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
+</head>
+<body>
+
+<h2>Demo JavaScript in Head</h2>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+</body>
+</html> 
+
+========================================================================================================================================================================================================
+/* JavaScript in <body>
+Pada contoh ini, fungsi JavaScript ditempatkan di bagian <body> pada halaman HTML. Fungsi ini dipanggil (dipanggil) ketika sebuah tombol diklik.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Demo JavaScript in Body</h2>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
+
+</body>
+</html> 
+
+========================================================================================================================================================================================================
+/* External JavaScript
+Untuk menggunakan skrip eksternal, letakkan nama file skrip di atribut src (sumber) dari tag <script>.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Demo External JavaScript</h2>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<p>This example links to "myScript.js".</p>
+<p>(myFunction is stored in "myScript.js")</p>
+
+<script src="myScript.js"></script>
+
+</body>
+</html>
+
+========================================================================================================================================================================================================
+/* External JavaScript Advantages
+Skrip eksternal dapat dirujuk dengan 3 cara berbeda: 1. Dengan URL lengkap (alamat web lengkap), 2. Dengan jalur file (seperti /js/), 3. Tanpa jalur apa pun
+
+/* Full URL
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>External JavaScript</h2>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Click Me</button>
+
+<p>This example uses a full web URL to link to "myScript.js".</p>
+<p>(myFunction is stored in "myScript.js")</p>
+
+<script src="https://www.w3schools.com/js/myScript.js"></script>
+
+</body>
+</html>
+
+/* File Path
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>External JavaScript</h2>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<p>This example uses a file path to link to "myScript.js".</p>
+<p>(myFunction is stored in "myScript.js")</p>
+
+<script src="/js/myScript.js"></script>
+
+</body>
+</html>
+
+/* Without URL
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Demo External JavaScript</h2>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<p>This example links to "myScript.js".</p>
+<p>(myFunction is stored in "myScript.js")</p>
+
+<script src="myScript.js"></script>
+
+</body>
+</html>
